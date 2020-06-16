@@ -1,0 +1,83 @@
+/** ============
+  * 全局公共样式
+  * ============
+  *
+  */
+
+html {
+  font-size: 20px;
+}
+body {
+  position: relative;
+  font-family: $ft-default;
+  font-size: $fs-normal;
+  color: $default-ft-color;
+}
+body.gray {
+  background-color: #F5F6F7;
+}
+input,
+textarea {
+  font-family: $ft-default;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.y-wrap {
+  width: 1200px;
+  border-radius: 5px;
+  margin-left: auto;
+  overflow: hidden;
+  margin-right: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.y-main {
+  // padding: 0 0 0 25px;
+  flex: 1;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  // margin-bottom: 5px;
+  background-color: #eeeeee;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  background-color: #fff;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #eeeeee;
+  &:hover{
+    background: #DDD;
+  }
+}
+
+.text-primary {
+  color: $primary;
+}
+.text-success {
+  color: $success;
+}
+.text-warning {
+  color: $warning;
+}
+.text-danger {
+  color: $danger;
+}
+.text-info {
+  color: $info;
+}
